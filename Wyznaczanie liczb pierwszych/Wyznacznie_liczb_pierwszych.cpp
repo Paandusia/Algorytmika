@@ -3,33 +3,33 @@
 using namespace std;
 
 
-int wyznaczanie{
-	int n;
+int wyznaczanie(int n){
+	int d;
 	
 	if (n < 2){
-		cout << n "nie jest liczba pierwsza" << endl; 
+		return 0;
 	}
 	
-	while (d == 2 || sqrt(n)){
-		
+	for (d = 2; d <= sqrt(n); d++){
+        if (n % d == 0)
+           return 0;
 	}
 	
-	while (n < 2){
-		if (n % ){
-			
-		}
-	}
-	
-	return ;
+	return 1;
 }
 
 
 int main(){
-	
+    int n;
+
 	cout << "Podaj liczbe: " << endl;
-	cin >> n
+	cin >> n;
 	
-	cout << n << "jest liczba pierwsza" << endl;
-	
+	if (wyznaczanie(n) == 1){
+	   cout << n << " jest liczba pierwsza" << endl;
+    }
+	else { 
+	     cout << n << " nie jest liczba pierwsza" << endl;
+    }  
 	return 0;
 }
