@@ -13,7 +13,7 @@ int wyznaczanie(int n){
 	for (d = 2; d <= sqrt(n); d++){
         if (n % d == 0){
            return 0;
-									}
+			}
 	}
 	
 	return 1;
