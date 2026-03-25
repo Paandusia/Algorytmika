@@ -2,8 +2,9 @@
 using namespace std;
 
 int hornera(int wsp[], int st, int x){
-	if(st == 0)
-	return wsp[0];
+	if(st == 0){
+		return wsp[0];
+	}
 	
 	return x * hornera(wsp, st - 1, x) + wsp[st];
 }
