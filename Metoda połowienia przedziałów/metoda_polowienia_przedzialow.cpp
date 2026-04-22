@@ -10,7 +10,7 @@ double pol(double a, double b, double epsilon) {
     if (f(a) == 0.0) return a;
     if (f(b) == 0.0) return b;
  
-    double srodek = (a + b) / 2.0;
+    double srodek = (a + b) / 2;
  
     if (fabs(b - a) < epsilon)
         return srodek;
